@@ -1,6 +1,6 @@
 {
   "name": "http-server-with-auth",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "A simple zero-configuration command-line http server",
   "main": "./lib/http-server-with-auth",
   "repository": {

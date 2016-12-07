@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 'use strict';
-
 var colors     = require('colors'),
     os         = require('os'),
     httpServer = require('../lib/http-server-with-auth'),

@@ -19,7 +19,7 @@ This will install `http-server` globally so that it may be run from the command 
 
 ## Usage:
 
-     http-server [path] [options]
+     http-server-with-auth [path] [options]
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
@@ -27,7 +27,7 @@ This will install `http-server` globally so that it may be run from the command 
 
      mkdir myapp
      cd myapp/
-     jitsu install http-server
+     jitsu install http-server-with-auth
 
 *If you do not have `jitsu` installed you can install it via `npm install jitsu -g`*
 
