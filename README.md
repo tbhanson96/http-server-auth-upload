@@ -1,14 +1,19 @@
-# http-server: a command-line http server
+# Disclaimer
 
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+This is a fork from : https://github.com/indexzero/http-server/ (thank you to all collaborators on the project)  
 
-![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)
+Forked in order to add Basic Auth in it.    
+This repo will mostly be deleted when the original project will add Auth.  
+
+# http-server-with-auth: a command-line http server
+
+`http-server-with-auth` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
 
 # Installing globally:
 
 Installation via `npm`:
 
-     npm install http-server -g
+     npm install http-server-with-auth -g
 
 This will install `http-server` globally so that it may be run from the command line.
 
@@ -30,7 +35,7 @@ This will install `http-server` globally so that it may be run from the command 
 
 ### Starting http-server locally
 
-     node bin/http-server
+     node bin/http-server-with-auth
 
 *Now you can visit http://localhost:8080 to view your server*
 
