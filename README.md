@@ -23,6 +23,12 @@ This will install `http-server` globally so that it may be run from the command 
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
+## Exemple using auth : 
+
+N.B : If you use special chars and passing it using arguments, you must mind to escape them. 
+
+    http-server-with-auth ./dist --username "Admin" --password "ImTheAdmini\$trator" -p 1234
+
 # Installing as a node app
 
      mkdir myapp
