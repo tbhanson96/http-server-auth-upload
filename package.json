@@ -1,19 +1,19 @@
 {
   "name": "http-server-with-auth",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "A simple zero-configuration command-line http server",
-  "main": "./lib/http-server",
+  "main": "./lib/http-server-with-auth",
   "repository": {
     "type": "git",
-    "url": "git://github.com/indexzero/http-server-with-auth.git"
+    "url": "git://github.com/Alex-Werner/http-server-with-auth.git"
   },
   "keywords": [
     "cli",
     "command"
   ],
   "scripts": {
-    "start": "node ./bin/http-server",
-    "pretest": "common bin/http-server lib/ test",
+    "start": "node ./bin/http-server-with-auth",
+    "pretest": "common bin/http-server-with-auth lib/ test",
     "test": "vows --spec --isolate"
   },
   "contributors": [
@@ -75,12 +75,12 @@
     "vows": "0.7.x"
   },
   "bugs": {
-    "url": "https://github.com/nodeapps/http-server/issues"
+    "url": "https://github.com/Alex-Werner/http-server-with-auth/issues"
   },
   "license": "MIT",
   "preferGlobal": "true",
   "bin": {
-    "http-server-with-auth": "./bin/http-server",
-    "hswa": "./bin/http-server"
+    "http-server-with-auth": "./bin/http-server-with-auth",
+    "hswa": "./bin/http-server-with-auth"
   }
 }

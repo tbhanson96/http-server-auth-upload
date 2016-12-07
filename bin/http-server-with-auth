@@ -4,7 +4,7 @@
 
 var colors     = require('colors'),
     os         = require('os'),
-    httpServer = require('../lib/http-server'),
+    httpServer = require('../lib/http-server-with-auth'),
     portfinder = require('portfinder'),
     opener     = require('opener'),
     argv       = require('optimist')
@@ -15,7 +15,7 @@ var ifaces = os.networkInterfaces();
 
 if (argv.h || argv.help) {
   console.log([
-    'usage: http-server [path] [options]',
+    'usage: http-server-with-auth [path] [options]',
     '',
     'options:',
     '  -p           Port to use [8080]',
@@ -130,7 +130,7 @@ function listen(port) {
     var canonicalHost = host === '0.0.0.0' ? '127.0.0.1' : host,
         protocol      = ssl ? 'https://' : 'http://';
 
-    logger.info(['Starting up http-server, serving '.yellow,
+    logger.info(['Starting up http-server-with-auth, serving '.yellow,
       server.root.cyan,
       ssl ? (' through'.yellow + ' https'.cyan) : '',
       '\nAvailable on:'.yellow
@@ -173,11 +173,11 @@ if (process.platform === 'win32') {
 }
 
 process.on('SIGINT', function () {
-  logger.info('http-server stopped.'.red);
+  logger.info('http-server-with-auth stopped.'.red);
   process.exit();
 });
 
 process.on('SIGTERM', function () {
-  logger.info('http-server stopped.'.red);
+  logger.info('http-server-with-auth stopped.'.red);
   process.exit();
 });
