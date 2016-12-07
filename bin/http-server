@@ -19,6 +19,11 @@ if (argv.h || argv.help) {
     '',
     'options:',
     '  -p           Port to use [8080]',
+    '  --username   Username for basic authentication [none]',
+    '               Can also be specified with the env variable NODE_HTTP_SERVER_USERNAME',
+    '  --password   Password for basic authentication [none]',
+    '               Can also be specified with the env variable NODE_HTTP_SERVER_PASSWORD',
+    '',
     '  -a           Address to use [0.0.0.0]',
     '  -d           Show directory listings [true]',
     '  -i           Display autoIndex [true]',
@@ -101,7 +106,9 @@ function listen(port) {
     robots: argv.r || argv.robots,
     ext: argv.e || argv.ext,
     logFn: logger.request,
-    proxy: proxy
+    proxy: proxy,
+    username: argv.username || process.env.NODE_HTTP_SERVER_USERNAME,
+    password: argv.password || process.env.NODE_HTTP_SERVER_PASSWORD
   };
 
   if (argv.cors) {

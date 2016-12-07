@@ -37,6 +37,10 @@ This will install `http-server` globally so that it may be run from the command 
 ## Available Options:
 
 `-p` Port to use (defaults to 8080)
+ 
+`--username` Username for basic authentication [none]
+
+`--password` Password for basic authentication [none]
 
 `-a` Address to use (defaults to 0.0.0.0)
 
