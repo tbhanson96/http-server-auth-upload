@@ -3,7 +3,7 @@
 'use strict';
 var colors     = require('colors'),
     os         = require('os'),
-    httpServer = require('../lib/http-server-with-auth'),
+    httpServer = require('../lib/http-server-auth-upload'),
     portfinder = require('portfinder'),
     opener     = require('opener'),
     argv       = require('optimist')
@@ -129,7 +129,7 @@ function listen(port) {
     var canonicalHost = host === '0.0.0.0' ? '127.0.0.1' : host,
         protocol      = ssl ? 'https://' : 'http://';
 
-    logger.info(['Starting up http-server-with-auth, serving '.yellow,
+    logger.info(['Starting up http-server-auth-upload, serving '.yellow,
       server.root.cyan,
       ssl ? (' through'.yellow + ' https'.cyan) : '',
       '\nAvailable on:'.yellow
