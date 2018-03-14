@@ -1,19 +1,16 @@
 {
-  "name": "http-server-with-auth",
-  "version": "0.10.2",
+  "name": "http-server-auth-upload",
+  "version": "0.10.3",
   "description": "A simple zero-configuration command-line http server",
-  "main": "./lib/http-server-with-auth",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Alex-Werner/http-server-with-auth.git"
-  },
+  "main": "./lib/http-server-auth-upload",
+  "repository": "git://github.com/tbhanson96/http-server-auth-upload.git",
   "keywords": [
     "cli",
     "command"
   ],
   "scripts": {
     "start": "node ./bin/http-server-with-auth",
-    "pretest": "common bin/http-server-with-auth lib/ test",
+    "pretest": "common bin/http-server-auth-upload lib/ test",
     "test": "vows --spec --isolate"
   },
   "contributors": [
@@ -59,15 +56,18 @@
   ],
   "dependencies": {
     "basic-auth": "^1.0.3",
-    "colors": "1.0.3",
+    "colors": "^1.2.0",
     "corser": "~2.0.0",
-    "ecstatic": "^2.0.0",
+    "ecstatic-upload": "https://github.com/tbhanson96/node-ecstatic-upload.git",
+    "formidable": "^1.2.0",
     "http-proxy": "^1.8.1",
+    "mv": "^2.1.1",
     "opener": "~1.4.0",
     "optimist": "0.6.x",
     "portfinder": "0.4.x",
     "secure-compare": "3.0.1",
-    "union": "~0.4.3"
+    "union": "~0.4.3",
+    "util": "^0.10.3"
   },
   "devDependencies": {
     "common-style": "^3.0.0",
@@ -75,12 +75,12 @@
     "vows": "0.7.x"
   },
   "bugs": {
-    "url": "https://github.com/Alex-Werner/http-server-with-auth/issues"
+    "url": "https://github.com/tbhanson96/http-server-auth-upload/issues"
   },
   "license": "MIT",
   "preferGlobal": "true",
   "bin": {
-    "http-server-with-auth": "./bin/http-server-with-auth",
-    "hswa": "./bin/http-server-with-auth"
-  }
+    "http-server-auth-upload": "./bin/http-server-auth-upload"
+  },
+  "author": "tbhanson96 <tbh20715@gmail.com>"
 }
