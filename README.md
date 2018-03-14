@@ -1,9 +1,8 @@
 # Disclaimer
 
-This is a fork from : https://github.com/indexzero/http-server/ (thank you to all collaborators on the project)  
+This is a fork from : https://github.com/Alex-Warner/http-server-with-auth/ (thank you to all collaborators on the project)  
 
-Forked in order to add Basic Auth in it.    
-This repo will mostly be deleted when the original project will add Auth.  
+this adds upload functionality using formidable.
 
 # http-server-with-auth: a command-line http server
 
